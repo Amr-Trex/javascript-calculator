@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="webpage">
+    <div id="containor">
+      <div id="card">
+        <h1>AlphaCalc</h1>
+        <input id="display" type="text" /><br /><br />
+        <firstRow>
+          <input
+            type="button"
+            value="AC"
+            class="button op1"
+            onclick="display.value = ''"
+          />
+          <input
+            type="button"
+            value="DE"
+            class="button op2"
+            onclick="display.value = display.value.slice(0, -1)"
+          />
+          <input
+            type="button"
+            value="."
+            class="button op3"
+            onclick="display.value += '.'"
+          />
+          <input
+            type="button"
+            value="/"
+            class="button op4"
+            onclick="display.value += '/'"
+          /> </firstRow
+        ><br />
+
+        <secondRow>
+          <input
+            type="button"
+            value="1"
+            class="button n1"
+            onclick="display.value += '1'"
+          />
+          <input
+            type="button"
+            value="2"
+            class="button n2"
+            onclick="display.value += '2'"
+          />
+          <input
+            type="button"
+            value="3"
+            class="button n3"
+            onclick="display.value += '3'"
+          />
+          <input
+            type="button"
+            value="*"
+            class="button op5"
+            onclick="display.value += '*'"
+          /> </secondRow
+        ><br />
+
+        <thirdRow>
+          <input
+            type="button"
+            value="4"
+            class="button n4"
+            onclick="display.value += '4'"
+          />
+          <input
+            type="button"
+            value="5"
+            class="button n5"
+            onclick="display.value += '5'"
+          />
+          <input
+            type="button"
+            value="6"
+            class="button n6"
+            onclick="display.value += '6'"
+          />
+          <input
+            type="button"
+            value="-"
+            class="button op6"
+            onclick="display.value += '-'"
+          /> </thirdRow
+        ><br />
+
+        <fourthRow>
+          <input
+            type="button"
+            value="7"
+            class="button n7"
+            onclick="display.value += '7'"
+          />
+          <input
+            type="button"
+            value="8"
+            class="button n8"
+            onclick="display.value += '8'"
+          />
+          <input
+            type="button"
+            value="9"
+            class="button n9"
+            onclick="display.value += '9'"
+          />
+          <input
+            type="button"
+            value="+"
+            class="button op7"
+            onclick="display.value += '+'"
+          /> </fourthRow
+        ><br />
+
+        <fifthRow>
+          <input
+            type="button"
+            value="MOD"
+            class="button op8"
+            onclick="display.value += '%'"
+          />
+          <input
+            type="button"
+            value="0"
+            class="button n0"
+            onclick="display.value += '0'"
+          />
+          <input
+            type="button"
+            value="="
+            class="button op9"
+            onclick="display.value = eval(display.value)"
+          />
+          <!--we can just use the evaluate function {eval()}, but lets try hardcoding it--> </fifthRow
+        ><br />
+      </div>
+    </div>
+    <a href="./index.html"><button class="button back">↩ Back</button></a>
+
+    
+  </body>
+  <script src="main.js"></script>
+
+  <script>
+    
+    // Get the URL search parameters
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Access the value of the "background" parameter
+    const backgroundValue = urlParams.get('background');
+
+    console.log("backgroundValue", backgroundValue); // Output: "firstTheme"
+
+    if (backgroundValue == "firstTheme") {
+      document.getElementById('webpage').style.background = "url('./bg_resources/giphy.webp')"
+    } else if (backgroundValue == "secondTheme") {
+      document.getElementById('webpage').style.background = 'url("./bg_resources/greyGrid2.jfif")'
+    } else if (backgroundValue == "thirdTheme") {
+      document.getElementById('webpage').style.background = 'url("./bg_resources/flowy_blue.gif")'
+    }
+
+  </script>
+</html>

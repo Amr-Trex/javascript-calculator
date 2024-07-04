@@ -1,0 +1,97 @@
+
+.button {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    border-radius: 8px;
+    color: aliceblue;
+    margin-top: 4px;
+    cursor: pointer;
+    color: antiquewhite;
+    background-color: navy;
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.back {
+    font-size: 15px;
+    width: 100px;
+}
+.op9 {
+    width: 105px;
+    background-color: rgb(180, 134, 49);
+}
+
+.op1, .op2, .op3, .op4, .op5, .op6, .op7, .op8 {
+    background-color: rgb(11, 161, 161);
+    color: aliceblue;
+}
+
+.button:hover {
+    color: antiquewhite;
+    background-color: rgb(206, 49, 49);
+}
+
+#display {
+    width: 207px;
+    height: 40px;
+    border: none;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: navy;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 25px;
+    color: antiquewhite;
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#containor {
+    position: fixed;
+    /* width: calc(100% - 400px); */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+
+}
+
+#card {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    text-align: center;
+    background-color: rgb(6, 6, 94);
+    width: 240px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 10px 10px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 15%;
+    left: 35%;
+}
+
+#webpage {
+    /* background: url("./flowy_blue.gif"); */
+    background-position: center !important;
+    background-size: cover !important;
+    overflow: hidden;
+
+    /* background-color: rgb(113, 219, 219); */
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: monospace;
+    color: rgb(180, 134, 49);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+}
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .themes {
+            /* text-align: center; */
+            cursor: pointer;
+            border-radius: 20%;
+            padding-left: 10px;
+            width: 150px;
+            height: 40px;
+            font-size: 17px;
+            font-style: italic;
+            font-weight: bold;
+            font-family: cursive;  
+        }
+        .themes:hover {
+            background-color: rgba(167, 76, 76, 0.699);
+        }
+        .page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+        }
+        .container {
+            background-position: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1, .note {
+            text-align: center;
+            color: azure;
+            text-shadow: 40px;
+            font-weight: bold;
+        }
+        .note {
+            margin-top: -60px;
+            font-size: large;
+        }
+        body {
+            background-image: url("./bg_resources/greyGrid2.jfif");
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .upArrow {
+            font-size: 50px;
+            text-align: center;
+            color: azure;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <h1>Welcome to AlphaCalc!!<br /> Choose your theme bellow:</h1>
+            <a href="calcOperations.html?background=firstTheme" onload=""><button class="themes t1" onclick="t1_chosen()">First Theme</button></a>
+            <a href="calcOperations.html?background=secondTheme"><button class="themes t2">Second Theme</button></a>
+            <a href="calcOperations.html?background=thirdTheme"><button class="themes t3">Third Theme</button></a><br />
+            <p class="upArrow">&#8593;</p><br/>
+            <p class="note">(PS. I like this the best)<br/>Select the one you like and click and hold the calc to drag :D</p>
+        </div>
+    </div>
+</body>
+</html>
